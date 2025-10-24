@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* ===========================
+   THEME COLORS
+   =========================== */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -8,8 +11,6 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +20,32 @@
   }
 }
 
+/* ===========================
+   FONT CONFIG
+   =========================== */
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("/fonts/HelveticaNeue_Font.ttc") format("truetype-collection");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Register your font for Tailwind theme */
+@theme {
+  --font-helvetica: "HelveticaNeue" arial;
+}
+
+/* Tailwind utility shortcut */
+@utility font-helvetica {
+  font-family: var(--font-helvetica);
+}
+
+/* ===========================
+   BASE STYLES
+   =========================== */
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-helvetica);
 }
