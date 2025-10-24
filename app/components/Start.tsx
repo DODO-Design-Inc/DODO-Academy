@@ -40,7 +40,7 @@ export default function () {
         </div>
       </div>
 
-      <div className="hidden md:blockflex justify-center gap-10 pb-[83px]">
+      <div className="hidden md:flex justify-center gap-10 pb-[83px]">
         <div className="w-[335px] h-[334px] xl:w-[545px] xl:h-[409px] relative ]">
           <Image src="/Freebie.png" alt="image" fill className="object-cover rounded-[7.13px] xl:rounded-[11.59px" />
           <div className="absolute w-[268.83px] xl:w-[415px] left-[22.34px] bottom-[29.34px] text-[#1E1E1E] pl-[14.8px] py-[10.72px] bg-white ">
