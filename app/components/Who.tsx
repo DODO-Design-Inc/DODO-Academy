@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function WoIsThisFor() {
   return (
-    <section className="bg-[#F7F7F7] pb-[90px] text-[#1E1E1E]">
+    <section className="bg-[#F7F7F7] pb-10 md:pb-[90px] text-[#1E1E1E]">
       <div className="pb-[16.38px] w-[334px] md:w-full mx-auto pt-10 xl:flex xl:justify-between xl:px-26 2xl:px-44">
         <div className=" text-center mb-6 mt-4 md:mt-8 text-2xl md:text-[32px] xl:text-5xl md:tracking-[-2%] font-normal xl:h-auto xl:flex flex-col justify-center">Who is this for?</div>
         <div className="xl:flex xl:justify-end">
