@@ -4,6 +4,9 @@ import { EnrollSection } from "./components/Why";
 import WoIsThisFor from "./components/Who";
 import Start from "./components/Start";
 import Curriculum from "./components/Curriculum";
+import EarlyBird from "./components/EarlyBird";
+import Testimonials from "./components/Testimonials";
+import FAQ from "./components/FAQ";
 
 export default function Home() {
   return (
@@ -11,7 +14,7 @@ export default function Home() {
       <Hero />
 
       <div className="md:flex justify-center max-w-11/12 gap-10 mx-auto py-20">
-        <section className="w-full md:w-1/2">
+        <section className="w-full md:w-1/2 bg-linear-to-l from-[#1B1F23] to-[#1B1F23]">
           <div className="container mx-auto max-w-7xl">
             <div className="text-[#F7F7F7] leading-normal md:leading-tight tracking-[-0.56px] md:tracking-[-1px] text-2xl md:text-[32px] xl:text-5xl font-normal w-full md:w-[410px] xl:w-[613px]">
               Shaping the{" "}
@@ -38,7 +41,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="w-full  md:text-sm leading-[1.4] xl:text-2xl flex flex-col justify-between">
+        <div className="w-full  md:text-sm leading-[1.4] xl:text-2xl flex flex-col justify-between text-[#F7F7F7]">
           <p className="mb-7 mt-8 md:mt-0">
           After years of practice across African contexts, we’ve seen a clear gap between what young professionals practise and what the industry demands. Product Designers, User Researchers, and Human-Centered Designers often struggle to translate research theory into actionable insights.
           </p>
@@ -56,6 +59,9 @@ export default function Home() {
       <WoIsThisFor/>
       <Start/>
       <Curriculum/>
+      <EarlyBird/>
+      <Testimonials/>
+      <FAQ/>
     </div>
   );
 }
