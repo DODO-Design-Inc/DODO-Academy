@@ -11,7 +11,7 @@ export default function Hero() {
         </div>
         
         <div className="w-full h-[376px] md:h-[430.19px] xl:h-[781px] relative mt-10 md:mt-[66.1px] lg:mt-[120px] overflow-hidden">
-            <video src="/video.mp4" playsInline muted controls={false} autoPlay loop className="w-full object-cover"></video>
+            <video src="/dodo-landing-page.mp4" playsInline muted controls={false} autoPlay loop className="w-full object-cover"></video>
         </div>
     </div>
   )
